@@ -37,6 +37,5 @@ public class Cola{
       while(temporal != null){
       temporal = primero.sig;}
 
-
     }
 }
