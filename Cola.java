@@ -32,11 +32,12 @@ public class Cola{
     }
 
     public void mostrarLista(){
-      System.out.println(primero.getElemento);
+      System.out.println(primero.getElemento());
       Nodo temporal = new Nodo();
       temporal = primero;
       while(temporal != null){
-      temporal = temporal.sig;}
+      temporal = temporal.sig;
+      System.out.println(temporal.getElemento());}
 
 
     }
