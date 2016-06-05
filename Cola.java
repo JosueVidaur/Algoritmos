@@ -8,7 +8,7 @@ public class Cola{
     }
 
   public boolean vacio(){
-    if(primero == ultimo && !(primero != null){
+    if(primero == ultimo && !(primero != null)){
       return true;}
     else {return false;}
     }
