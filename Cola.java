@@ -34,8 +34,9 @@ public class Cola{
     public void mostrarLista(){
       System.out.println(primero.getElemento);
       Nodo temporal = new Nodo();
+      temporal = primero;
       while(temporal != null){
-      temporal = primero.sig;}
+      temporal = temporal.sig;}
 
 
     }
