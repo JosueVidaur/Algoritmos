@@ -15,11 +15,16 @@ public class Cola{
     Nodo temporal=new Nodo(elemento);
     if(vacio()==true){
       primero=temporal;
-      ultimo=temporal;
+      primero.sig = ultimo;
       }
     else{
-      ultimo.sig=temporal;
-      ultimo=temporal;
+      if(ultimo != null){
+        ultimo.sig = temporal;
+      }
+      else{
+        ultimo = temporal;
+      }
+    
       }
     }
 
