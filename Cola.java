@@ -8,7 +8,9 @@ public class Cola{
     }
 
   public boolean vacio(){
-    return (primero == ultimo == null);
+    if(primero == ultimo == null){
+      return true;}
+    else {return false;}
     }
 
   public void insertar(String elemento){
