@@ -14,7 +14,8 @@ public class Cola{
   public void insertar(String elemento){
     Nodo temporal=new Nodo(elemento);
     if(vacio()==true){
-      primero=ultimo=temporal;
+      primero=temporal;
+      ultimo=temporal;
       }
     else{
       ultimo.sig=temporal;
