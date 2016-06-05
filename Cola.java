@@ -8,9 +8,7 @@ public class Cola{
     }
 
   public boolean vacio(){
-    if(primero == ultimo && !(primero != null)){
-      return true;}
-    else {return false;}
+    return (primero==null);
     }
 
   public void insertar(String elemento){
@@ -35,11 +33,15 @@ public class Cola{
 
     public void mostrarLista(){
       Nodo temporal = new Nodo();
+      if(vacio()==true){
+        System.out.println("Lista vacia");
+      }
+      else{
       temporal = primero;
       while(temporal != null){
       System.out.println(temporal.getElemento());
       temporal = temporal.sig;
       }
-
+      }
     }
 }
