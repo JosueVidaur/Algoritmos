@@ -19,6 +19,7 @@ public class Cola{
       }
     else{
       ultimo.sig=temporal;
+      ultimo=temporal;
       }
     }
 
