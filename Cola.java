@@ -7,11 +7,11 @@ public class Cola{
     primero=ultimo=null;
     }
 
-  public bool vacio(){
+  public boolean vacio(){
     return (primero==ultimo);
     }
 
-  public String insertar(String elemento){
+  public void insertar(String elemento){
     Nodo temporal=new Nodo(elemento);
     if(vacio()==true){
       primero=ultimo=temporal;
@@ -21,8 +21,7 @@ public class Cola{
       }
     }
 
-   public String eliminar(String elemento){
-    private Nodo borrador;
+   public void eliminar(){
     if(vacio()==true){
       System.out.println("La cola esta vacia, no es posible borrar elementos");
       }
